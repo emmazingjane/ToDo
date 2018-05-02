@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
-import TodosContainer from './container/TodosContainer';
+import ToDosContainer from './containers/ToDosContainer';
+import Header from './components/Header';
+import MyRoutes from './config/routes';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1> HELLO WORLD </h1>
+        <Header />
+          { MyRoutes }
       </div>
     );
   }
