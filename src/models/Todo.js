@@ -5,6 +5,11 @@ class TodoModel {
     let request = axios.get("http://10.1.6.96:8080/todos")
     return request
   }
+
+  static create(todo) {
+  	let request = axios.post("http://10.1.6.96:8080/todos", todo)
+  	return request
+  }
 }
 
 export default TodoModel
